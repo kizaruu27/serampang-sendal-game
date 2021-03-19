@@ -13,7 +13,7 @@ public class Peluru : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        script.OnTriggerEnter();
+        
         timer = destroy;
     }
 

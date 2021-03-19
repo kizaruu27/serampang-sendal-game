@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4466104, g: 0.49645048, b: 0.5748381, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -333,6 +333,8 @@ MonoBehaviour:
   firePoint: {fileID: 858723107}
   peluru: {fileID: 4306427479903246369, guid: ceaca7896c8e4f94fbfcbb31d17592ed, type: 3}
   cam: {fileID: 963194227}
+  ammo: 3
+  isFiring: 0
 --- !u!1 &126221218
 GameObject:
   m_ObjectHideFlags: 0
