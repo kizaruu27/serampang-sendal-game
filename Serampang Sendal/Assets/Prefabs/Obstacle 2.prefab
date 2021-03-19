@@ -119,6 +119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: jemuran
       objectReference: {fileID: 0}
+    - target: {fileID: 8977674450434718866, guid: 2b78f21827f753546822c8e412454ae9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Jemuran
+      objectReference: {fileID: 0}
     - target: {fileID: 8977674450434875570, guid: 2b78f21827f753546822c8e412454ae9,
         type: 3}
       propertyPath: m_RootOrder
