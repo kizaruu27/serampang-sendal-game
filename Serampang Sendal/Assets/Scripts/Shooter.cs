@@ -6,6 +6,7 @@ public class Shooter : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject peluru;
+    public Camera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,8 @@ public class Shooter : MonoBehaviour
     }
     void Shoot(){
 
-    Instantiate(peluru, firePoint.position, firePoint.rotation);
+    GameObject peluruPadu = Instantiate(peluru);
+    peluruPadu.transform.position = cam.transform.position;
+    peluruPadu.transform.forward = cam.transform.forward;
     }
 }
