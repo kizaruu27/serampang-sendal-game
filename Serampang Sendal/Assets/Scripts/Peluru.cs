@@ -7,8 +7,8 @@ public class Peluru : MonoBehaviour
      public float speed = 10f;
     public float destroy = 1f;
     private float timer;
+    public int score;
     
-    public Shooter script;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +25,13 @@ public class Peluru : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        // void OnTriggerEnter(Collider amunisi) {
-        // if (amunisi.CompareTag("Sandal")){
-        //     ammo++;
-        // }
-        //}
+        void OnTriggerEnter(Collider amunisi) {
+        if (amunisi.CompareTag("Sandal")){
+            score++;
+            amunisi.GetComponent<Shooter>().ammo += 1;
+            Debug.Log(amunisi.GetComponent<Shooter>().ammo);
+        }
+        }
     }
   
 }

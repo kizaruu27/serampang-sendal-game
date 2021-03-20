@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooter : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Shooter : MonoBehaviour
     public Camera cam;
     public int ammo;
     public bool isFiring;
+    public Text ammoCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class Shooter : MonoBehaviour
             isFiring = false;
             Shoot();
         }
+        ammoCount.text = ammo.ToString();
     }
     void Shoot(){
     GameObject peluruPadu = Instantiate(peluru);
