@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Sendal : MonoBehaviour
 {
-    public int point;
         //public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -20,9 +19,7 @@ public class Sendal : MonoBehaviour
 
     void OnTriggerEnter(Collider sandal) {
         if(sandal.CompareTag("Peluru")){
-            point++;
-            Debug.Log(point++);
-            
+            Debug.Log("Nambah 1");
         }
     }
 }

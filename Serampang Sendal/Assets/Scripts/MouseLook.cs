@@ -14,13 +14,13 @@ public class MouseLook : MonoBehaviour
     float rotationX = 0f;
 
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
         rotationX += Input.GetAxis ("Mouse X") * sensitivityX;
         rotationX = Mathf.Clamp (rotationX, minimumX, maximumX);
