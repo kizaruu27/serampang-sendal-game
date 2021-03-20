@@ -26,14 +26,13 @@ public class Peluru : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        void OnTriggerEnter(Collider amunisi) {
-        if (amunisi.CompareTag("Sandal")){
-            score++;
+    
+    }
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Sandal"))
+        {
+            score += 1;
             Destroy(gameObject);
-            amunisi.GetComponent<Shooter>().ammo += 1;
-            Debug.Log(amunisi.GetComponent<Shooter>().ammo);
-            
-        }
         }
     }
   
