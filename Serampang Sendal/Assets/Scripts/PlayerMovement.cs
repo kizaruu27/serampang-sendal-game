@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    bool alive = true;
 
     public float speed = 5;
     [SerializeField] Rigidbody rb;
@@ -15,7 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void FixedUpdate ()
     {
-        if (!alive) return;
+        
 
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
@@ -32,7 +31,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Die ()
     {
-        alive = false;
+         SceneManager.LoadScene("GameOver");
+         Cursor.lockState = CursorLockMode.None;
         
     }
 
