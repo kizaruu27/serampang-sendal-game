@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
     public bool GameIsPause = false;
     public GameObject pauseMenuUI;
     public GameObject Crosshair;
-    public GameObject ShootSendal;
+    GameObject FPS = GameObject.FindWithTag("Player");
 
     // Update is called once per frame
     void Update()
@@ -33,16 +33,22 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Crosshair.SetActive(true);
         AudioListener.volume = 1f;
+        FPS.GetComponent<MouseLook>().enabled = true;
+        FPS.GetComponent<Shooter>().enabled = true;
+        FPS.GetComponent<PlayerMovement>().enabled = true;
         GameIsPause = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Crosshair.SetActive(false);
         AudioListener.volume = 0f;
+        FPS.GetComponent<MouseLook>().enabled = false;
+        FPS.GetComponent<Shooter>().enabled = false;
+        FPS.GetComponent<PlayerMovement>().enabled = false;
         GameIsPause = true;
     }
 
