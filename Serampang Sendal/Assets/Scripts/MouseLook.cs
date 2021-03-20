@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
- public float sensitivityX = 15F;
- public float sensitivityY = 15F;
- public float minimumX = -90F;
- public float maximumX = 90F;
- public float minimumY = -60F;
- public float maximumY = 60F;
- float rotationY = 0F;
- float rotationX = 0f;
+    public float sensitivityX = 15F;
+    public float sensitivityY = 15F;
+    public float minimumX = -90F;
+    public float maximumX = 90F;
+    public float minimumY = -60F;
+    public float maximumY = 60F;
+    float rotationY = 0F;
+    float rotationX = 0f;
 
     // Start is called before the first frame update
     void Start()

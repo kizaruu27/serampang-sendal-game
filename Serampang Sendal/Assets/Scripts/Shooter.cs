@@ -9,6 +9,7 @@ public class Shooter : MonoBehaviour
     public Camera cam;
     public int ammo;
     public bool isFiring;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +27,10 @@ public class Shooter : MonoBehaviour
             Shoot();
         }
     }
-    void Shoot(){
-    GameObject peluruPadu = Instantiate(peluru);
-    peluruPadu.transform.position = cam.transform.position;
-    peluruPadu.transform.forward = cam.transform.forward;
+    public void Shoot(){
+        GameObject peluruPadu = Instantiate(peluru);
+        peluruPadu.transform.position = cam.transform.position;
+        peluruPadu.transform.forward = cam.transform.forward;
     }
    
     public void OnTriggerEnter(Collider amunisi) {
