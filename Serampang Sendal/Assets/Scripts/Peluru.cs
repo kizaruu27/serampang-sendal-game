@@ -13,6 +13,7 @@ public class Peluru : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = 0;
         timer = destroy;
     }
 
@@ -28,8 +29,10 @@ public class Peluru : MonoBehaviour
         void OnTriggerEnter(Collider amunisi) {
         if (amunisi.CompareTag("Sandal")){
             score++;
+            Destroy(gameObject);
             amunisi.GetComponent<Shooter>().ammo += 1;
             Debug.Log(amunisi.GetComponent<Shooter>().ammo);
+            
         }
         }
     }
