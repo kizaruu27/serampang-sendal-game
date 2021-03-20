@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
@@ -27,9 +27,8 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
     public void gameover () {
-         SceneManager.LoadScene("GameOver");
+         SceneManager.LoadScene("Gameover", LoadSceneMode.Additive);
          Cursor.lockState = CursorLockMode.None;
-        
     }
 
 
