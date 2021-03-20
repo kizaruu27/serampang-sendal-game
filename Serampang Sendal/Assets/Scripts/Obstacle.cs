@@ -10,16 +10,13 @@ public class Obstacle : MonoBehaviour {
         playerMovement = GameObject.FindObjectOfType<PlayerMovement>();
 	}
 
-    private void OnCollisionEnter (Collision collision)
-    {
+    private void OnCollisionEnter (Collision collision) {
         if (collision.gameObject.name == "Player") {
             // Kill the player
-            playerMovement.Die();
+            playerMovement.gameover();
             
         }
     }
 
-    private void Update () {
-	
-	}
+    
 }

@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    bool alive = true;
 
     public float speed = 5;
     [SerializeField] Rigidbody rb;
@@ -13,10 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speedIncreasePerPoint = 0.1f;
 
-    private void FixedUpdate ()
-    {
-        if (!alive) return;
-
+    private void FixedUpdate () {
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
@@ -26,13 +22,13 @@ public class PlayerMovement : MonoBehaviour {
         horizontalInput = Input.GetAxis("Horizontal");
 
         if (transform.position.y < -5) {
-            Die();
+            gameover();
         }
 	}
 
-    public void Die ()
-    {
-        alive = false;
+    public void gameover () {
+         SceneManager.LoadScene("GameOver");
+         Cursor.lockState = CursorLockMode.None;
         
     }
 
