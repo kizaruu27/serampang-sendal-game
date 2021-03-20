@@ -1,36 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public bool Paused = false;
-    public GameObject ThePlayer;
+    public bool GameIsPause = false;
+    public GameObject pauseMenuUI;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Cancel")
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Paused == false)
+            if (GameIsPause)
             {
-                Time.timeScale = 0;
-                Paused = true;
-                ThePlayer.GetComponent<PlayerMovement>().enabled = false;
-                ThePlayer.GetComponent<Shooter>().enabled = false;
-                Cursor.visible = true;
+                Resume();
             }
             else
             {
-                Time.timeScale = 1;
-                Paused = false;
-                ThePlayer.GetComponent<PlayerMovement>().enabled = true;
-                ThePlayer.GetComponent<Shooter>().enabled = true;
-                Cursor.visible = false;
+                Pause();
             }
         }
+    }
+
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        GameIsPause = false;
+    }
+
+    void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        GameIsPause = true;
     }
 
     public void LoadMenu()

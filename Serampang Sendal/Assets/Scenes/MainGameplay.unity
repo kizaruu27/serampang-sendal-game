@@ -752,6 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718b3a314f264d84b90af37e260aafc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPause: 0
   pauseMenuUI: {fileID: 1001351659}
 --- !u!1 &518260099
 GameObject:
@@ -1700,7 +1701,7 @@ GameObject:
   - component: {fileID: 1505034072}
   - component: {fileID: 1505034071}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
