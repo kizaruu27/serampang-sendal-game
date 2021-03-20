@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44684356, g: 0.4967206, b: 0.57497627, a: 1}
+  m_IndirectSpecularColor: {r: 0.44661063, g: 0.4964509, b: 0.5748389, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -756,7 +756,6 @@ MonoBehaviour:
   GameIsPause: 0
   pauseMenuUI: {fileID: 1001351659}
   Crosshair: {fileID: 1505034069}
-  ShootSendal: {fileID: 0}
 --- !u!1 &518260099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1052,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.8018868, g: 0.55835444, b: 0.28368637, a: 1}
-  m_Intensity: 3
+  m_Intensity: 2.01
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1062,8 +1061,13 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
+<<<<<<< HEAD
     m_Strength: 0.341
     m_Bias: 1.4
+=======
+    m_Strength: 1
+    m_Bias: 0.05
+>>>>>>> parent of d7c56ed (lighting fix)
     m_NormalBias: 0.4
     m_NearPlane: 0.2
     m_CullingMatrixOverride:
@@ -1109,13 +1113,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.18717219, y: 0.374866, z: -0.8483986, w: 0.32351476}
+  m_LocalRotation: {x: 0.4074993, y: -0.23465937, z: 0.1091891, w: 0.87576085}
   m_LocalPosition: {x: -0.53, y: 5.62, z: 0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 49.216, y: -6.597, z: -141.278}
+  m_LocalEulerAnglesHint: {x: 49.906002, y: -30.000002, z: 0}
 --- !u!1 &807703267
 GameObject:
   m_ObjectHideFlags: 0
