@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sendal : MonoBehaviour
 {
     public float point = 0;
+    public int angka;
     public Animator anim;
         //public Rigidbody rb;
     // Start is called before the first frame update
@@ -21,10 +22,13 @@ public class Sendal : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider sandal) {
-        if(sandal.CompareTag("Peluru")){
-            anim.SetBool("HitDia", true);
+        Debug.Log(sandal.tag);
+        if(sandal.tag == "Peluru"){
             point += 1;
+            angka += 1;
             Debug.Log("Nambah 1");
+            PlayerPrefs.SetInt("Skor", angka);
+            //anim.SetBool("HitDia", true);
         }else
         {
             anim.SetBool("HitDia", false);

@@ -795,7 +795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2108420248973308424
 Transform:
   m_ObjectHideFlags: 0
@@ -840,6 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
+  angka: 0
   anim: {fileID: 0}
 --- !u!95 &2686217780754615689
 Animator:
@@ -1177,7 +1178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2225272614667596992
 Transform:
   m_ObjectHideFlags: 0
@@ -1222,6 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
+  angka: 0
   anim: {fileID: 0}
 --- !u!95 &9098838704904620512
 Animator:
@@ -1300,7 +1302,7 @@ Transform:
   m_GameObject: {fileID: 7552098498257375030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.661, y: 0.19997, z: 29.96}
-  m_LocalScale: {x: 0.4330395, y: 0.43303967, z: 0.4330396}
+  m_LocalScale: {x: 0.4330396, y: 0.4330396, z: 0.4330396}
   m_Children:
   - {fileID: 2439582345867934215}
   - {fileID: 3154127019049016228}
@@ -1335,6 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
+  angka: 0
   anim: {fileID: 1656952506384875182}
 --- !u!95 &1656952506384875182
 Animator:
