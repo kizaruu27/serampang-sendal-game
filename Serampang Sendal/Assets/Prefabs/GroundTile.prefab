@@ -790,12 +790,12 @@ GameObject:
   - component: {fileID: 6341355046354893664}
   - component: {fileID: 2686217780754615689}
   m_Layer: 0
-  m_Name: GrubSendal
+  m_Name: GrubSendal2
   m_TagString: Sandal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2108420248973308424
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,12 +1173,12 @@ GameObject:
   - component: {fileID: 1687220618161761153}
   - component: {fileID: 9098838704904620512}
   m_Layer: 0
-  m_Name: GrubSendal
+  m_Name: GrubSendal1
   m_TagString: Sandal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2225272614667596992
 Transform:
   m_ObjectHideFlags: 0

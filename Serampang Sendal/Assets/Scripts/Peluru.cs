@@ -36,7 +36,9 @@ public class Peluru : MonoBehaviour
     void OnTriggerEnter(Collider akunisi) {
         if (akunisi.CompareTag("Sandal"))
         {
-            Destroy(gameObject);
+            score++;
+            PlayerPrefs.SetInt("Skor", score);
+            Debug.Log("Kena");
         }
     }
   
