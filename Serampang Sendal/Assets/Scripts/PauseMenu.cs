@@ -32,6 +32,7 @@ public class PauseMenu : MonoBehaviour
         GameObject CAM = GameObject. FindWithTag("MainCamera");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
+        UnityEngine.Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Crosshair.SetActive(true);
         AudioListener.volume = 1f;
@@ -47,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         GameObject CAM = GameObject. FindWithTag("MainCamera");
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        UnityEngine.Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Crosshair.SetActive(false);
         AudioListener.volume = 0f;

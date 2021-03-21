@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
     public void gameover () {
          SceneManager.LoadScene("Gameover", LoadSceneMode.Additive);
          Cursor.lockState = CursorLockMode.None;
+         UnityEngine.Cursor.visible = true;
     }
 
 

@@ -16,6 +16,7 @@ public class Obstacle : MonoBehaviour {
             // Kill the player
             playerMovement.gameover();
             
+            
         }
     }
 
