@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 872762636700820245}
   - component: {fileID: 564031688014352396}
   - component: {fileID: 1371230668522182930}
-  - component: {fileID: 1705119308933109189}
+  - component: {fileID: 6059125077793099650}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Untagged
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc654637b17dcb4c8dea59610ff55b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1705119308933109189
+--- !u!114 &6059125077793099650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
