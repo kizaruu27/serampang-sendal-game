@@ -6,23 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject background;
+    
     public GameObject about;
 
-    public void aboutClicked()
-    {
-        background.SetActive(false);
-        about.SetActive(true);
+    public void PlayGame (){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void exitClicked()
-    {
+    public void QuitGame (){
+        Debug.Log("KELUAR!!");
         Application.Quit();
     }
 
-    public void backClicked()
-    {
-        background.SetActive(true);
-        about.SetActive(false);
-    }
+   
 }
