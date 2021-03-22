@@ -16,8 +16,7 @@ public class Obstacle : MonoBehaviour {
             SceneManager.LoadScene("GameOver");
             // Kill the player
             playerMovement.gameover();
-            
-            
+            Debug.Log("Kena");
         }
     }
 }
