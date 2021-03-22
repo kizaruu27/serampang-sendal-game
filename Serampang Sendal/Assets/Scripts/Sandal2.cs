@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sendal : MonoBehaviour
+public class Sandal2 : MonoBehaviour
 {
     public float point = 0;
     public int angka ;
@@ -22,7 +22,6 @@ public class Sendal : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider sandal) {
-        Debug.Log(sandal.tag);
         if(sandal.tag == "Peluru"){
             point += 1;
             angka += 1;

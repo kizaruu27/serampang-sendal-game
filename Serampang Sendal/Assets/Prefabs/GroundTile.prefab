@@ -836,12 +836,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5337580372606545878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7796b563ba86454c9a725143914858c, type: 3}
+  m_Script: {fileID: 11500000, guid: c9861cf066d103048bcc65e9d42803cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
   angka: 0
-  anim: {fileID: 0}
+  anim: {fileID: 2686217780754615689}
 --- !u!95 &2686217780754615689
 Animator:
   serializedVersion: 3
@@ -1219,12 +1219,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7031100754071639955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7796b563ba86454c9a725143914858c, type: 3}
+  m_Script: {fileID: 11500000, guid: c9861cf066d103048bcc65e9d42803cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
   angka: 0
-  anim: {fileID: 0}
+  anim: {fileID: 9098838704904620512}
 --- !u!95 &9098838704904620512
 Animator:
   serializedVersion: 3
@@ -1284,7 +1284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2970933157878053799}
   - component: {fileID: 2853439669961003131}
-  - component: {fileID: 3356536206912002953}
+  - component: {fileID: 1952050176511414928}
   - component: {fileID: 1656952506384875182}
   m_Layer: 0
   m_Name: GrubSendal
@@ -1324,7 +1324,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2815702, y: 1.7477311, z: 2.1824}
   m_Center: {x: -0.23648024, y: 0.33571616, z: 0.019068575}
---- !u!114 &3356536206912002953
+--- !u!114 &1952050176511414928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1333,7 +1333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7552098498257375030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7796b563ba86454c9a725143914858c, type: 3}
+  m_Script: {fileID: 11500000, guid: c9861cf066d103048bcc65e9d42803cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   point: 0
