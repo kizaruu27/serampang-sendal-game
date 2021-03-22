@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject about;
 
     public void PlayGame (){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MainGameplay");
     }
 
     public void QuitGame (){
@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void BalikKeMenu (){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 
    
