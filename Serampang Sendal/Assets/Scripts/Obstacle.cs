@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour {
         playerMovement = GameObject.FindObjectOfType<PlayerMovement>();
 	}
 
-    private void OnCollisionEnter (Collision collision) {
+    public void OnCollisionEnter (Collision collision) {
         if (collision.gameObject.name == "Players") {
             SceneManager.LoadScene("GameOver");
             // Kill the player
