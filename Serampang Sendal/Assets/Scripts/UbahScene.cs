@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UbahScene : MonoBehaviour
 {
     void OnTriggerEnter (Collider other){
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         Cursor.lockState = CursorLockMode.None;
     }
 
